@@ -1,0 +1,27 @@
+{
+  "name": "openfin-speech-recognition",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "openfin-cli": "^2.0.6",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8",
+    "wait-on": "^3.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start:fe\" \"npm run start:openfin\"",
+    "start:fe": "react-scripts start",
+    "start:openfin": "wait-on http://localhost:3000 && openfin --launch --url http://localhost:3000"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
