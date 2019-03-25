@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import WebCam from 'react-webcam';
 import {
     SpeechRecognition,
     SpeechGrammarList
@@ -79,6 +80,7 @@ class SpeechRecognitionComponent extends React.Component {
           Start Voice Recognition
         </button>
         <p>{result}</p>
+        <WebCam />
       </div>
     );
   }
