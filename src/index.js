@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SpeechRecognitionComponent from "./components/SpeechRecognition";
+import AudioCapture from './components/AudioCapture';
 
-ReactDOM.render(
-  <SpeechRecognitionComponent />,
-  document.getElementById("root")
-);
+ReactDOM.render(<AudioCapture />, document.getElementById("root"));
